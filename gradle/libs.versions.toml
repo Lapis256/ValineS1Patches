@@ -1,0 +1,40 @@
+[versions]
+plugin_mixin = "0.7.+"
+plugin_forge = "6.0.+"
+plugin_parchmentmc = "1.+"
+
+
+minecraft = "1.18.2"
+minecraftForge = "1.18.2-40.2.0"
+forge = "40.2.3"
+parchmentmc = "2022.11.06"
+mixin = "0.8.5"
+mixinExtras = "0.3.5"
+
+jei = "10.2.1.1005"
+architectury  = "5137931"
+kotlinForForge  = "4513187"
+observable = "3745494"
+mekanism = "1.18.2-10.2.5.465"
+lootr = "5397019"
+
+
+[libraries]
+minecraft = { module = "com.mojang:minecraft", version.ref = "minecraft" }
+minecraftForge = { module = "net.minecraftforge:forge", version.ref = "minecraftForge" }
+mixin = { module = "org.spongepowered:mixin", version.ref = "mixin" }
+mixinExtrasCommon = { module = "io.github.llamalad7:mixinextras-common", version.ref = "mixinExtras" }
+mixinExtrasForge = { module = "io.github.llamalad7:mixinextras-forge", version.ref = "mixinExtras" }
+
+jei = { module = "mezz.jei:jei-1.18.2-forge", version.ref = "jei" }
+architectury = { module = "curse.maven:architectury-419699", version.ref = "architectury" }
+kotlinForForge = { module = "curse.maven:kotlinForForge-351264", version.ref = "kotlinForForge" }
+observable = { module = "curse.maven:observable-509575", version.ref = "observable" }
+mekanism = { module = "mekanism:Mekanism", version.ref = "mekanism" }
+lootr = { module = "curse.maven:lootr-361276", version.ref = "lootr" }
+
+
+[plugins]
+mixin = { id = "org.spongepowered.mixin", version.ref = "plugin_mixin" }
+forge = { id = "net.minecraftforge.gradle", version.ref = "plugin_forge" }
+parchmentmc = { id = "org.parchmentmc.librarian.forgegradle", version.ref = "plugin_parchmentmc" }
